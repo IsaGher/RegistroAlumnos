@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Registro de Alumnos</string>
+    <string name="hint_carnet">Carnet:</string>
+    <string name="hint_nombre">Nombre:</string>
+    <string name="hint_carrera">Carrera:</string>
+    <string name="hint_anio_ingreso">Año de ingreso:</string>
+    <string name="btn_guardar">Guardar Datos</string>
+    <string name="menu_nuevo">Nuevo registro</string>
+</resources>
