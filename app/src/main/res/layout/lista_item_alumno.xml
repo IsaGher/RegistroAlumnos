@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/viewCarnet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#056793"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/viewNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#085E85"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/viewCarrera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#056793"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/viewAnio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#085E85"
+            android:textSize="22sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#6B99DD" />
+    </LinearLayout>
+</LinearLayout>
