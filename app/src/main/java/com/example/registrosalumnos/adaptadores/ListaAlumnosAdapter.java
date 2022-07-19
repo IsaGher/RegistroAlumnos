@@ -1,5 +1,7 @@
 package com.example.registrosalumnos.adaptadores;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.registrosalumnos.R;
+import com.example.registrosalumnos.VerActivity;
 import com.example.registrosalumnos.entidades.Alumnos;
 
 import java.util.ArrayList;
@@ -51,6 +54,16 @@ public class ListaAlumnosAdapter extends RecyclerView.Adapter<ListaAlumnosAdapte
             viewNombre = itemView.findViewById(R.id.viewNombre);
             viewCarrera = itemView.findViewById(R.id.viewCarrera);
             viewAnio = itemView.findViewById(R.id.viewAnio);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, VerActivity.class);
+                    intent.putExtra( "id",listaAlumnos.get(getAdapterPosition()).getId());
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 }
